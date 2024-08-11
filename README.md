@@ -61,7 +61,9 @@ Stability AI API Key: Obtain from Stability AI.
 ## Troubleshooting
 ### Common Issues
 Redis Not Running: Ensure Redis is running before starting the Celery worker.
+
 API Key Issues: Verify that your Stability AI API key is correctly set in the .env file.
+
 Database Issues: Run python manage.py migrate to ensure the database schema is up-to-date.
    
 
