@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Images</title>
+</head>
+<body>
+    <h1>Generated Images</h1>
+    {% if image_urls %}
+        <div>
+            {% for image_url in image_urls %}
+                <div>
+                    <img src="{{ image_url }}" alt="Generated Image" style="max-width: 300px; margin: 10px;">
+                    <p>{{ image_url }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No images generated yet.</p>
+    {% endif %}
+</body>
+</html>
